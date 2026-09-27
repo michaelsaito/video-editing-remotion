@@ -1,0 +1,27 @@
+{
+  "name": "video-editing-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Projeto de edicao e geracao de video com Remotion (React) e ffmpeg - templates, roteiros e renders para conteudo de video com IA.",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion bundle",
+    "render:transicoes": "remotion render TransicoesDemo out/transicoes-demo.mp4",
+    "render:legendas": "remotion render LegendasDemo out/legendas-demo.mp4",
+    "render:cortes": "remotion render CortesDemo out/cortes-demo.mp4",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.290",
+    "@remotion/transitions": "4.0.290",
+    "@remotion/media-utils": "4.0.290",
+    "@remotion/captions": "4.0.290",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.290"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.1",
+    "typescript": "5.5.4"
+  }
+}
