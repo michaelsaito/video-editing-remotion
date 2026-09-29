@@ -2,3 +2,10 @@ out/
 node_modules/
 .DS_Store
 work/
+
+# Videos reais de clientes/pessoais colocados em public/ para preview
+# local - nao devem ir pro repositorio publico (arquivos grandes e
+# conteudo pessoal/de terceiros).
+public/*.mp4
+public/*.mov
+!public/.gitkeep
