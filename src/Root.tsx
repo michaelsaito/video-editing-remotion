@@ -4,6 +4,7 @@ import { TransicoesDemo } from './compositions/TransicoesDemo';
 import { LegendasDemo } from './compositions/LegendasDemo';
 import { CortesDemo } from './compositions/CortesDemo';
 import { VideoEditado } from './compositions/VideoEditado';
+import { VideoFinal } from './compositions/VideoFinal';
 
 // FPS e dimensoes padrao para conteudo vertical (Reels / TikTok / Shorts).
 // Troque para 1920x1080 se for fazer video horizontal (YouTube, ads 16:9).
@@ -39,6 +40,16 @@ export const Root: React.FC = () => {
         id="VideoEditado"
         component={VideoEditado}
         durationInFrames={500} // 16.66s a 30fps (duracao real do clipe-original.mp4)
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
+      {/* 5) Video FINAL: grading + legenda sincronizada com o roteiro real */}
+      <Composition
+        id="VideoFinal"
+        component={VideoFinal}
+        durationInFrames={500} // 16.66s a 30fps
         fps={30}
         width={1080}
         height={1920}
